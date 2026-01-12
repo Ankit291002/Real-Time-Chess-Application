@@ -50,9 +50,10 @@ io.on("connection",(uniquesocket)=>{
             }
         }
         catch(err){
-            uniquesocket.emit("inalidmove",move)
+            uniquesocket.emit("invalidmove",move)
         }
     })
 })
+
 
 server.listen(3000)
